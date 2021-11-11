@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(224, 226, 255) ;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container{
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 22%);
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    background-color: white;
+    margin: 20px auto;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+h1, h2{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration:none;
+    text-transform: uppercase;
+    color:green;
+}
+
+a.arrow{
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+a.arrow:after{
+    content: ">";
+    position: absolute;
+    margin: 0 8px;
+    top: 0;
+    bottom:0;
+}
+
+a.arrow:hover::after,
+a.arrow:focus::after,
+a.arrow:active::after {
+-moz-transform:translate(3px, 0px);
+-webkit-transform:translate(3px, 0px) ;
+-o-transform:translate(3px, 0px);
+-ms-transform:translate(3px, 0px);
+transform: translate(3px, 0px);
+translate: .5s ;
+}
+
+a.hexagon{
+    display: inline-block;
+    position: relative;
+    margin:0;
+    padding-right: 50px;
+}
+
+a.hexagon::before{
+    content: "";
+    background:url("/assets/images/hexagon.svg") center center no-repeat;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    bottom:0;
+    margin: auto;
+    right: 5px;
+    position: absolute;
+    fill: blue;
+}
+
+a.hexagon::after{
+    content: "";
+    background:url("/assets/images/arrow.svg") center center no-repeat;
+    background-size: 20px;
+    width: 30px;
+    height: 20px;
+    top: 0;
+    bottom:0;
+    margin: auto;
+    right: 9px;
+    position: absolute;
+}
+
+a.hexagon:hover::before,
+a.hexagon:active::before,
+a.hexagon:focus::before{
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -webkit-transition-duration: 0.3;
+    transition-duration: 0.3s;
+    transition-property:transform;
+    -webkit-transition-property: transform;
+    
+}
+
+a.print{
+    content: "("attr(href)")";
+    color: black;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+p{
+ text-decoration:none;
+ text-transform: uppercase;
+ color:green;
+}
+
+div{
+ margin:35px 50px;
+}
+
+a{
+    margin-top: 20px;
+    display: block;
+}
+
+#visited{
+    color: red;
+}
+
+#hover:hover{
+    font-weight:900;
+}
+
+#active:active{
+    color: blue;
+}
+
+#focus:focus{
+    color: white;
+}
+
+input{
+    margin:0 15px;
+}
+
+input:disabled{
+    font-size: 10px;
+}
+
+input:checked{
+    margin-top: 1%;
+    width: 25px;
+    height: 25px;
+}
+
+p{
+    margin:2% 0;
+}
+
+ul{
+    margin-left: 5%;
+}
+
+li:first-child{
+    font-weight: bold;
+}
+
+a:only-child{
+    text-transform: uppercase;
+}
+
+li:last-child{
+    color: blue;
+}
+
+article{ 
+    margin:55px 50px;
+    display: block;
+}
+
+article p:first-of-type{
+    font-weight: bold;
+}
+
+article span:only-of-type{
+    text-transform: uppercase;
+}
+
+article p:last-of-type{
+ color: blue;
+}
+
+h4, h5, h6{
+    margin:2% 0;  
+}
+
+article h4:nth-last-child(3n){
+    color: blue;
+}
+
+article h5:nth-of-type(2n){
+    color: red;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+div h6:not(.bold){
+font-weight: normal;
+}
+
+.print{
+    display: inline;
+}
+
+
+
+
+
