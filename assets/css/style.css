@@ -67,7 +67,7 @@ a.hexagon{
     padding-right: 50px;
 }
 
-a.hexagon::before{
+a.hexagon:before{
     content: "";
     background:url("/assets/images/hexagon.svg") center center no-repeat;
     width: 40px;
@@ -78,6 +78,10 @@ a.hexagon::before{
     right: 5px;
     position: absolute;
     fill: blue;
+    -webkit-transition-duration: 0.3;
+    transition-duration: 0.3s;
+    transition-property:transform;
+    -webkit-transition-property: transform;
 }
 
 a.hexagon::after{
@@ -100,12 +104,7 @@ a.hexagon:focus::before{
     -webkit-transform: rotate(30deg);
     -o-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
-    transform: rotate(30deg);
-    -webkit-transition-duration: 0.3;
-    transition-duration: 0.3s;
-    transition-property:transform;
-    -webkit-transition-property: transform;
-    
+    transform: rotate(30deg); 
 }
 
 a.print{
